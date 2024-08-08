@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bootstrap Homework</title>
+  <link href="style.css" rel="stylesheet">
+  <!-- Task 1 (part 1): Link Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Task 2 (part 1): Create a navbar with the following links (all other links should be deleted or disabled) -->
+  <!-- Home (index.html), Cat Facts (facts.html), Learn More (https://en.wikipedia.org/wiki/Cat) -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid bg-success">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="facts.html">Cat Facts</a>
+          <a class="nav-link" href="https://en.wikipedia.org/wiki/Cat">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Task 2 (part 2): Make sure facts.html has this same navbar so you can move back and forth. You will need to import Bootstrap in both files. -->
+  <!-- Extra Credit: Style the navbar and cards to be the same background color -->
+
+
+
+
+
+  <h1>Cats</h1>
+  <!-- Task 3: Add a carousel with 3 different cat images -->
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.pbs.org/wnet/nature/files/2014/09/ExtraordinaryCats-Main.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://people.com/thmb/xHPJAus5iELyf5ndsPJ84GeJTwI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(694x160:696x162)/cat-study-110223-1-efc838c9067349ab82ac24abc4cc2de5.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <h2>Wild Cats</h2>
+  <!-- Task 4: Add 2 Bootstrap cards with different wildcats and descriptions of them -->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card bg-success">
+        <img src="https://wilderness-society.org/wp-content/uploads/2019/03/EWS-Wildlife-10738_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">European wildcat</h5>
+          <p class="card-text">A small wildcat species that orginates in Europe that can live up to 16 years</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card bg-success">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWtF9foua_c84Af0G2F6cfPBIVf6bGTSP3xlKd0h8sFa8rFnrm" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">African wildcat</h5>
+          <p class="card-text">A small wildcat species that orginates in africa that can live up to 16 years</p>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 1 (part 2): Link Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
